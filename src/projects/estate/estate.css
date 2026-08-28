@@ -101,9 +101,9 @@
 .monument-pin span { background: var(--mon-black); border-radius: 50%; height: 4px; margin-bottom: 4px; width: 4px; }
 .monument-pin:hover { background: var(--mon-black); color: var(--mon-paper); transform: scale(1.08); }
 .monument-pin:hover span { background: var(--mon-paper); }
-.pin-one { left: 58%; top: 28%; }
-.pin-two { left: 35%; top: 49%; }
-.pin-three { left: 23%; top: 72%; }
+.pin-one { left: 49%; top: 32%; }
+.pin-two { left: 41%; top: 35%; }
+.pin-three { left: 41%; top: 42%; }
 .monument-map-label { background: var(--mon-paper); bottom: 25px; font-size: 9px; left: 25px; letter-spacing: .1em; line-height: 1.7; padding: 12px; position: absolute; text-transform: uppercase; z-index: 2; }
 .monument-location-copy { align-items: flex-start; border-left: 1px solid var(--mon-rule); display: flex; flex-direction: column; justify-content: center; padding: clamp(60px,7vw,115px); }
 .monument-location-copy h2 { font-family: 'Instrument Serif'; font-size: clamp(50px,5.5vw,88px); font-weight: 400; letter-spacing: -.05em; line-height: .93; margin: 55px 0 32px; }
