@@ -17,7 +17,7 @@ export const PROJECTS: ProjectMeta[] = [
     eyebrow: 'Independent fragrance',
     name: 'Nocturne',
     note: 'Scent after the lights go down.',
-    image: '/images/nocturne/after-dark.png',
+    image: `${import.meta.env.BASE_URL}images/nocturne/after-dark.png`,
     color: '#f05a28',
     foreground: '#11100f',
   },

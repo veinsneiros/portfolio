@@ -51,7 +51,7 @@ const PRODUCTS: Product[] = [
     price: 165,
     size: '50 ml',
     concentration: 'Parfum extrait',
-    image: '/images/nocturne/after-dark.png',
+    image: `${import.meta.env.BASE_URL}images/nocturne/after-dark.png`,
     alt: 'Sculptural smoked-black Nocturne perfume bottle on stone and brushed metal',
     notes: ['Black tea', 'Incense', 'Vetiver'],
     description:
@@ -74,7 +74,7 @@ const PRODUCTS: Product[] = [
     price: 180,
     size: '50 ml',
     concentration: 'Eau de parfum',
-    image: '/images/nocturne/velvet-hour.png',
+    image: `${import.meta.env.BASE_URL}images/nocturne/velvet-hour.png`,
     alt: 'Deep plum Nocturne perfume bottle with crimson flowers and silk',
     notes: ['Damask rose', 'Saffron', 'Suede'],
     description:
@@ -97,7 +97,7 @@ const PRODUCTS: Product[] = [
     price: 155,
     size: '50 ml',
     concentration: 'Eau de parfum',
-    image: '/images/nocturne/ghost-wood.png',
+    image: `${import.meta.env.BASE_URL}images/nocturne/ghost-wood.png`,
     alt: 'Pale smoked Nocturne perfume bottle on limestone with a botanical shadow',
     notes: ['Juniper', 'Hinoki', 'White musk'],
     description:
@@ -120,7 +120,7 @@ const PRODUCTS: Product[] = [
     price: 145,
     size: '50 ml',
     concentration: 'Eau de parfum',
-    image: '/images/nocturne/electric-bloom.png',
+    image: `${import.meta.env.BASE_URL}images/nocturne/electric-bloom.png`,
     alt: 'Chartreuse Nocturne perfume bottle among coral petals and green leaves',
     notes: ['Neroli', 'Tuberose', 'Pink pepper'],
     description:
@@ -143,7 +143,7 @@ const PRODUCTS: Product[] = [
     price: 175,
     size: '50 ml',
     concentration: 'Parfum extrait',
-    image: '/images/nocturne/blue-cipher.png',
+    image: `${import.meta.env.BASE_URL}images/nocturne/blue-cipher.png`,
     alt: 'Deep cobalt Nocturne perfume bottle with reflected water light',
     notes: ['Bergamot', 'Orris', 'Ambergris'],
     description:
@@ -166,7 +166,7 @@ const PRODUCTS: Product[] = [
     price: 160,
     size: '50 ml',
     concentration: 'Eau de parfum',
-    image: '/images/nocturne/cedar-radio.png',
+    image: `${import.meta.env.BASE_URL}images/nocturne/cedar-radio.png`,
     alt: 'Amber Nocturne perfume bottle on architectural cedar and charred wood',
     notes: ['Cardamom', 'Cedar', 'Tonka bean'],
     description:
