@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap');
+
+.monument-site {
+  --mon-black: #11110f;
+  --mon-paper: #e8e6df;
+  --mon-warm: #c7c2b5;
+  --mon-rule: rgba(17,17,15,.24);
+  background: var(--mon-paper);
+  color: var(--mon-black);
+  font-family: 'DM Sans',sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  overflow: clip;
+}
+
+.monument-site *, .monument-site *::before, .monument-site *::after { box-sizing: border-box; }
+.monument-site a { color: inherit; text-decoration: none; }
+.monument-site button, .monument-site input, .monument-site select, .monument-site textarea { color: inherit; font: inherit; }
+.monument-site button, .monument-site a { -webkit-tap-highlight-color: transparent; }
+.monument-site img { display: block; width: 100%; }
+
+.monument-nav { align-items: center; background: rgba(232,230,223,.94); backdrop-filter: blur(14px); border-bottom: 1px solid var(--mon-rule); display: grid; grid-template-columns: 1fr auto 1fr; height: 76px; left: 0; padding: 0 clamp(22px,4vw,66px); position: sticky; top: 0; z-index: 70; }
+.monument-wordmark { font-size: 18px; font-weight: 600; letter-spacing: .17em; justify-self: start; }
+.monument-nav-links { display: flex; gap: 38px; }
+.monument-nav-links a { font-size: 10px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; }
+.monument-nav-links a:hover { opacity: .5; }
+.monument-enquire-nav { align-items: center; background: transparent; border: 0; border-bottom: 1px solid var(--mon-black); cursor: pointer; display: flex; font-size: 11px; font-weight: 600; gap: 9px; justify-self: end; letter-spacing: .12em; padding: 5px 0; text-transform: uppercase; }
+.monument-enquire-nav svg { transition: transform .2s; }
+.monument-enquire-nav:hover svg { transform: translate(3px,-3px); }
+.monument-menu-button { background: transparent; border: 0; cursor: pointer; display: none; justify-self: end; padding: 7px; }
+.monument-mobile-nav { background: var(--mon-black); color: var(--mon-paper); display: none; flex-direction: column; height: calc(100vh - 69px); inset: 69px 0 auto; padding: 40px 22px; position: absolute; transform-origin: top; }
+.monument-mobile-nav button { align-items: center; background: transparent; border: 0; border-bottom: 1px solid rgba(232,230,223,.25); color: inherit; cursor: pointer; display: grid; font-family: 'Instrument Serif'; font-size: 42px; grid-template-columns: 45px 1fr 28px; padding: 19px 0; text-align: left; }
+.monument-mobile-nav button span { font-family: 'DM Sans'; font-size: 9px; letter-spacing: .12em; }
+
+.monument-hero { color: #f2f0e9; height: calc(100vh - 76px); min-height: 690px; overflow: hidden; position: relative; }
+.monument-hero > img { height: 100%; object-fit: cover; object-position: center 55%; position: absolute; }
+.monument-hero-shade { background: linear-gradient(90deg,rgba(8,8,7,.7),rgba(8,8,7,.18) 64%,rgba(8,8,7,.32)),linear-gradient(0deg,rgba(8,8,7,.45),transparent 45%); inset: 0; position: absolute; }
+.monument-hero-title { left: clamp(22px,5vw,78px); position: absolute; top: 13%; width: min(78vw,1190px); }
+.monument-hero-title div { font-family: 'Instrument Serif',serif; font-size: clamp(72px,10.2vw,178px); letter-spacing: -.055em; line-height: .73; overflow: hidden; padding-bottom: .12em; }
+.monument-hero-title div.is-indent { margin-left: 13%; }
+.monument-hero-title span { display: block; }
+.monument-hero-intro { bottom: clamp(94px,12vh,145px); font-size: 13px; left: 55%; line-height: 1.55; margin: 0; max-width: 410px; position: absolute; }
+.monument-scroll { align-items: center; background: transparent; border: 0; bottom: 30px; color: #f2f0e9!important; cursor: pointer; display: flex; font-size: 10px; font-weight: 600; gap: 20px; left: clamp(22px,5vw,78px); letter-spacing: .14em; padding: 0; text-transform: uppercase; }
+.monument-scroll svg { border: 1px solid rgba(242,240,233,.6); border-radius: 50%; height: 42px; padding: 11px; transition: transform .25s, background .25s; width: 42px; }
+.monument-scroll:hover svg { background: #f2f0e9; color: var(--mon-black); transform: translateY(5px); }
+.monument-hero-index { bottom: 37px; font-size: 10px; letter-spacing: .14em; position: absolute; right: clamp(22px,4vw,66px); }
+
+.monument-section-index { font-size: 9px; font-weight: 600; letter-spacing: .14em; line-height: 1.7; text-transform: uppercase; }
+.monument-statement { border-bottom: 1px solid var(--mon-rule); display: grid; gap: 50px; grid-template-columns: 180px 1fr; padding: clamp(100px,13vw,200px) clamp(22px,5vw,80px); }
+.monument-statement h2 { font-family: 'Instrument Serif',serif; font-size: clamp(48px,6.5vw,106px); font-weight: 400; grid-column: 2; letter-spacing: -.045em; line-height: .98; margin: 0; max-width: 1300px; }
+.monument-statement h2 em { color: #7a756c; }
+.monument-statement-foot { align-items: start; border-top: 1px solid var(--mon-rule); display: grid; gap: 40px; grid-column: 2; grid-template-columns: 1fr 1fr; margin-top: 30px; padding-top: 30px; }
+.monument-statement-foot p { font-size: 13px; line-height: 1.7; margin: 0; max-width: 490px; }
+.monument-statement-foot button, .monument-location-copy > button { align-items: center; background: transparent; border: 0; border-bottom: 1px solid var(--mon-black); cursor: pointer; display: flex; font-size: 10px; font-weight: 600; gap: 15px; justify-self: end; letter-spacing: .13em; padding: 4px 0 8px; text-transform: uppercase; }
+.monument-statement-foot button svg, .monument-location-copy > button svg { width: 16px; }
+
+.monument-projects { background: #f1f0ea; padding: clamp(90px,11vw,170px) clamp(22px,4vw,66px); }
+.monument-projects-head { align-items: end; display: grid; gap: 40px; grid-template-columns: 1.5fr .5fr; }
+.monument-projects-head h2 { font-family: 'Instrument Serif'; font-size: clamp(58px,8vw,130px); font-weight: 400; letter-spacing: -.055em; line-height: .9; margin: 30px 0 0; }
+.monument-projects-head > p { font-size: 12px; line-height: 1.7; margin: 0 0 5px; max-width: 360px; }
+.monument-filters { border-bottom: 1px solid var(--mon-rule); display: flex; gap: 35px; margin: 80px 0 50px; overflow-x: auto; }
+.monument-filters button { background: transparent; border: 0; color: #76736c; cursor: pointer; flex: 0 0 auto; font-size: 11px; letter-spacing: .08em; padding: 0 0 14px; position: relative; text-transform: uppercase; }
+.monument-filters button::after { background: var(--mon-black); bottom: -1px; content: ''; height: 2px; left: 0; position: absolute; transform: scaleX(0); transform-origin: right; transition: transform .25s; width: 100%; }
+.monument-filters button.is-active { color: var(--mon-black); }
+.monument-filters button.is-active::after { transform: scaleX(1); }
+.monument-filters sup { font-size: 8px; margin-left: 5px; top: -.4em; }
+.monument-property-grid { display: grid; gap: 80px 20px; grid-template-columns: repeat(12,1fr); }
+.monument-property { grid-column: span 6; }
+.monument-property:nth-child(3n + 2) { grid-column: 7 / span 5; margin-top: 120px; }
+.monument-property:nth-child(3n) { grid-column: 2 / span 5; }
+.monument-property > button { background: transparent; border: 0; cursor: pointer; display: block; padding: 0; text-align: left; width: 100%; }
+.monument-property-image { aspect-ratio: 1.26; overflow: hidden; position: relative; }
+.monument-property:nth-child(3n + 2) .monument-property-image { aspect-ratio: .93; }
+.monument-property-image::after { background: rgba(10,10,9,.22); content: ''; inset: 0; opacity: 0; position: absolute; transition: opacity .4s; }
+.monument-property-image img { height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(.16,1,.3,1); }
+.monument-property-image > span { align-items: center; background: var(--mon-paper); bottom: 0; display: flex; font-size: 9px; gap: 8px; letter-spacing: .11em; opacity: 0; padding: 12px 14px; position: absolute; right: 0; text-transform: uppercase; transform: translateY(100%); transition: .35s; z-index: 2; }
+.monument-property > button:hover img { transform: scale(1.035); }
+.monument-property > button:hover .monument-property-image::after { opacity: 1; }
+.monument-property > button:hover .monument-property-image > span { opacity: 1; transform: translateY(0); }
+.monument-property-meta { border-top: 1px solid var(--mon-rule); margin-top: 17px; padding-top: 12px; position: relative; }
+.monument-property-meta > div { display: flex; font-size: 9px; justify-content: space-between; letter-spacing: .1em; text-transform: uppercase; }
+.monument-property-meta h3 { font-family: 'Instrument Serif'; font-size: clamp(38px,4.2vw,68px); font-weight: 400; letter-spacing: -.045em; margin: 22px 0 6px; }
+.monument-property-meta p { color: #6c6963; font-size: 10px; letter-spacing: .08em; margin: 0; text-transform: uppercase; }
+.monument-property-meta i { bottom: 0; position: absolute; right: 0; transition: transform .25s; }
+.monument-property-meta i svg { width: 19px; }
+.monument-property > button:hover .monument-property-meta i { transform: translateX(5px); }
+
+.monument-numbers { background: var(--mon-black); color: var(--mon-paper); padding: 75px clamp(22px,4vw,66px) 90px; }
+.monument-numbers .monument-section-index { color: #8a887f; }
+.monument-number-grid { display: grid; grid-template-columns: repeat(4,1fr); margin-top: 65px; }
+.monument-number-grid > div { border-left: 1px solid rgba(232,230,223,.25); display: flex; flex-direction: column; min-height: 210px; padding: 0 25px; }
+.monument-number-grid > div:last-child { border-right: 1px solid rgba(232,230,223,.25); }
+.monument-number-grid strong { font-family: 'Instrument Serif'; font-size: clamp(72px,8vw,130px); font-weight: 400; letter-spacing: -.06em; line-height: .9; }
+.monument-number-grid span { font-size: 9px; letter-spacing: .12em; margin-top: auto; text-transform: uppercase; }
+
+.monument-location { display: grid; grid-template-columns: 1.18fr .82fr; min-height: 800px; }
+.monument-map { min-height: 800px; overflow: hidden; position: relative; }
+.monument-map > img { filter: grayscale(1) contrast(.85) sepia(.1); height: 100%; object-fit: cover; }
+.monument-map::after { background: rgba(199,194,181,.18); content: ''; inset: 0; pointer-events: none; position: absolute; }
+.monument-pin { align-items: center; background: rgba(232,230,223,.88); border: 1px solid var(--mon-black); border-radius: 50%; cursor: pointer; display: flex; flex-direction: column; font-size: 8px; font-weight: 600; height: 60px; justify-content: center; letter-spacing: .1em; position: absolute; transition: background .2s, color .2s, transform .2s; width: 60px; z-index: 2; }
+.monument-pin span { background: var(--mon-black); border-radius: 50%; height: 4px; margin-bottom: 4px; width: 4px; }
+.monument-pin:hover { background: var(--mon-black); color: var(--mon-paper); transform: scale(1.08); }
+.monument-pin:hover span { background: var(--mon-paper); }
+.pin-one { left: 58%; top: 28%; }
+.pin-two { left: 35%; top: 49%; }
+.pin-three { left: 23%; top: 72%; }
+.monument-map-label { background: var(--mon-paper); bottom: 25px; font-size: 9px; left: 25px; letter-spacing: .1em; line-height: 1.7; padding: 12px; position: absolute; text-transform: uppercase; z-index: 2; }
+.monument-location-copy { align-items: flex-start; border-left: 1px solid var(--mon-rule); display: flex; flex-direction: column; justify-content: center; padding: clamp(60px,7vw,115px); }
+.monument-location-copy h2 { font-family: 'Instrument Serif'; font-size: clamp(50px,5.5vw,88px); font-weight: 400; letter-spacing: -.05em; line-height: .93; margin: 55px 0 32px; }
+.monument-location-copy > p { font-size: 12px; line-height: 1.75; max-width: 450px; }
+.monument-offices { border-bottom: 1px solid var(--mon-rule); border-top: 1px solid var(--mon-rule); display: grid; gap: 20px; grid-template-columns: 1fr 1fr; margin: 40px 0; padding: 25px 0; width: 100%; }
+.monument-offices div { display: flex; flex-direction: column; }
+.monument-offices span { color: #77736a; font-size: 8px; letter-spacing: .13em; margin-bottom: 10px; text-transform: uppercase; }
+.monument-offices b { font-size: 11px; font-weight: 500; line-height: 1.6; }
+.monument-location-copy > button { justify-self: auto; }
+
+.monument-inquiry { background: #c8c3b7; display: grid; gap: clamp(60px,8vw,130px); grid-template-columns: .85fr 1.15fr; padding: clamp(100px,12vw,180px) clamp(22px,6vw,100px); }
+.monument-inquiry-copy h2 { font-family: 'Instrument Serif'; font-size: clamp(64px,7vw,112px); font-weight: 400; letter-spacing: -.055em; line-height: .85; margin: 65px 0 35px; }
+.monument-inquiry-copy > p { font-size: 12px; line-height: 1.75; max-width: 440px; }
+.monument-inquiry-copy > a { align-items: center; border-bottom: 1px solid var(--mon-black); display: inline-flex; font-size: 11px; gap: 10px; letter-spacing: .07em; margin-top: 30px; padding-bottom: 7px; }
+.monument-inquiry-copy > a svg { width: 15px; }
+.monument-form { border-top: 1px solid var(--mon-black); display: flex; flex-direction: column; }
+.monument-form label { border-bottom: 1px solid rgba(17,17,15,.35); display: grid; grid-template-columns: 145px 1fr; padding: 23px 0; }
+.monument-form label > span { font-size: 8px; letter-spacing: .12em; padding-top: 7px; text-transform: uppercase; }
+.monument-form input, .monument-form select, .monument-form textarea { background: transparent; border: 0; border-radius: 0; font-family: 'Instrument Serif'; font-size: 25px; outline: 0; padding: 0; resize: vertical; }
+.monument-form input::placeholder, .monument-form textarea::placeholder { color: rgba(17,17,15,.45); }
+.monument-form input:focus, .monument-form select:focus, .monument-form textarea:focus { outline: 1px solid rgba(17,17,15,.5); outline-offset: 6px; }
+.monument-form button[type=submit] { align-items: center; align-self: flex-end; background: var(--mon-black); border: 0; color: var(--mon-paper)!important; cursor: pointer; display: flex; font-size: 10px; font-weight: 600; gap: 18px; letter-spacing: .12em; margin-top: 30px; padding: 17px 21px; text-transform: uppercase; transition: background .2s, transform .2s; }
+.monument-form button[type=submit]:hover { background: #3a3934; transform: translateY(-3px); }
+.monument-form-success { align-items: center; border: 1px solid rgba(17,17,15,.4); display: flex; gap: 14px; margin-top: 20px; padding: 16px; }
+.monument-form-success > span { align-items: center; border: 1px solid var(--mon-black); border-radius: 50%; display: flex; flex: 0 0 auto; height: 32px; justify-content: center; width: 32px; }
+.monument-form-success svg { width: 14px; }
+.monument-form-success b { font-family: 'Instrument Serif'; font-size: 18px; font-weight: 400; }
+.monument-form-success p { font-size: 9px; letter-spacing: .05em; margin: 3px 0 0; }
+
+.monument-footer { background: var(--mon-black); color: var(--mon-paper); display: grid; gap: 40px; grid-template-columns: 1.4fr .7fr .7fr; padding: 75px clamp(22px,4vw,66px) 28px; }
+.monument-footer-wordmark { font-size: clamp(38px,6vw,94px); font-weight: 600; letter-spacing: .12em; line-height: .9; }
+.monument-footer > div { display: flex; flex-direction: column; font-size: 9px; gap: 8px; letter-spacing: .11em; text-transform: uppercase; }
+.monument-footer-links { align-items: flex-end; }
+.monument-footer-links a { border-bottom: 1px solid rgba(232,230,223,.25); padding-bottom: 2px; }
+.monument-footer-links a:hover { color: var(--mon-warm); }
+.monument-footer small { border-top: 1px solid rgba(232,230,223,.2); grid-column: 1 / -1; margin-top: 65px; opacity: .55; padding-top: 20px; }
+
+.monument-modal-backdrop { align-items: flex-end; background: rgba(8,8,7,.7); display: flex; inset: 0; justify-content: center; padding: 3vh 3vw 0; position: fixed; z-index: 100; }
+.monument-modal { background: var(--mon-paper); display: grid; grid-template-columns: 1.08fr .92fr; height: min(900px,94vh); max-width: 1500px; overflow: auto; position: relative; width: 100%; }
+.monument-modal-close { align-items: center; background: var(--mon-paper); border: 0; cursor: pointer; display: flex; height: 52px; justify-content: center; position: absolute; right: 0; top: 0; width: 52px; z-index: 3; }
+.monument-modal-close:hover { background: var(--mon-black); color: var(--mon-paper); }
+.monument-modal-image { min-height: 100%; position: relative; }
+.monument-modal-image > img { height: 100%; object-fit: cover; position: absolute; }
+.monument-modal-image > div { background: rgba(17,17,15,.82); bottom: 0; color: var(--mon-paper); display: flex; font-size: 8px; justify-content: space-between; left: 0; letter-spacing: .12em; padding: 12px 15px; position: absolute; text-transform: uppercase; width: 100%; }
+.monument-modal-content { display: flex; flex-direction: column; justify-content: center; padding: clamp(55px,6vw,95px); }
+.monument-modal-back { align-items: center; align-self: flex-start; background: transparent; border: 0; cursor: pointer; display: flex; font-size: 8px; gap: 9px; letter-spacing: .12em; margin-bottom: 50px; padding: 0; text-transform: uppercase; }
+.monument-modal-back svg { width: 14px; }
+.monument-modal-content > p { font-size: 9px; letter-spacing: .13em; margin: 0; text-transform: uppercase; }
+.monument-modal-content h2 { font-family: 'Instrument Serif'; font-size: clamp(64px,7vw,112px); font-weight: 400; letter-spacing: -.055em; line-height: .85; margin: 22px 0 38px; }
+.monument-modal-content blockquote { font-family: 'Instrument Serif'; font-size: 22px; line-height: 1.4; margin: 0 0 35px; }
+.monument-modal-content dl { border-top: 1px solid var(--mon-rule); margin: 0; }
+.monument-modal-content dl div { border-bottom: 1px solid var(--mon-rule); display: grid; font-size: 10px; grid-template-columns: 1fr 1fr; padding: 13px 0; }
+.monument-modal-content dt { color: #77736b; }
+.monument-modal-content dd { margin: 0; text-align: right; }
+.monument-modal-enquire { align-items: center; background: var(--mon-black); border: 0; color: var(--mon-paper)!important; cursor: pointer; display: flex; font-size: 9px; font-weight: 600; gap: 15px; justify-content: center; letter-spacing: .1em; margin-top: 35px; padding: 16px; text-transform: uppercase; }
+
+@media (max-width: 1050px) {
+  .monument-hero-title div { font-size: clamp(72px,11.5vw,125px); }
+  .monument-statement { grid-template-columns: 110px 1fr; }
+  .monument-property:nth-child(3n + 2) { grid-column: 7 / span 6; }
+  .monument-property:nth-child(3n) { grid-column: 1 / span 6; }
+  .monument-location { grid-template-columns: 1fr 1fr; }
+  .monument-location-copy { padding: 55px; }
+  .monument-modal-content { padding: 65px 45px; }
+}
+
+@media (max-width: 780px) {
+  .monument-nav { grid-template-columns: 1fr auto; height: 69px; }
+  .monument-nav-links, .monument-enquire-nav { display: none; }
+  .monument-menu-button, .monument-mobile-nav { display: flex; }
+  .monument-hero { height: calc(100svh - 69px); min-height: 610px; }
+  .monument-hero-title { top: 15%; width: calc(100% - 44px); }
+  .monument-hero-title div { font-size: clamp(66px,14vw,105px); }
+  .monument-hero-title div.is-indent { margin-left: 0; }
+  .monument-hero-intro { bottom: 105px; left: 22px; max-width: min(70vw,420px); }
+  .monument-statement { grid-template-columns: 1fr; }
+  .monument-statement h2, .monument-statement-foot { grid-column: auto; }
+  .monument-statement-foot { grid-template-columns: 1fr; }
+  .monument-statement-foot button { justify-self: start; }
+  .monument-projects-head { align-items: start; grid-template-columns: 1fr; }
+  .monument-projects-head > p { max-width: 450px; }
+  .monument-filters { margin-top: 55px; }
+  .monument-property-grid { display: grid; gap: 65px 14px; grid-template-columns: 1fr 1fr; }
+  .monument-property, .monument-property:nth-child(3n + 2), .monument-property:nth-child(3n) { grid-column: auto; margin-top: 0; }
+  .monument-property:nth-child(even) { margin-top: 90px; }
+  .monument-property-image, .monument-property:nth-child(3n + 2) .monument-property-image { aspect-ratio: .88; }
+  .monument-number-grid { grid-template-columns: 1fr 1fr; }
+  .monument-number-grid > div, .monument-number-grid > div:last-child { border-bottom: 1px solid rgba(232,230,223,.25); border-right: 0; min-height: 180px; padding: 22px; }
+  .monument-location { grid-template-columns: 1fr; }
+  .monument-map { min-height: 600px; }
+  .monument-location-copy { border-left: 0; min-height: 680px; }
+  .monument-inquiry { grid-template-columns: 1fr; }
+  .monument-footer { grid-template-columns: 1fr 1fr; }
+  .monument-footer-wordmark { grid-column: 1 / -1; }
+  .monument-modal { grid-template-columns: 1fr; height: 96vh; }
+  .monument-modal-image { min-height: 48vh; }
+  .monument-modal-image > img { position: absolute; }
+  .monument-modal-content { padding: 50px 30px; }
+}
+
+@media (max-width: 520px) {
+  .monument-nav { padding: 0 18px; }
+  .monument-hero-title { left: 18px; width: calc(100% - 36px); }
+  .monument-hero-title div { font-size: clamp(59px,19vw,84px); line-height: .78; }
+  .monument-hero-intro { bottom: 108px; font-size: 11px; left: 18px; max-width: calc(100% - 80px); }
+  .monument-scroll { left: 18px; }
+  .monument-statement, .monument-projects, .monument-inquiry { padding-left: 18px; padding-right: 18px; }
+  .monument-statement h2 { font-size: 47px; }
+  .monument-statement-foot { gap: 25px; }
+  .monument-projects-head h2 { font-size: 62px; }
+  .monument-property-grid { display: flex; flex-direction: column; }
+  .monument-property:nth-child(even) { margin-top: 0; }
+  .monument-property-image, .monument-property:nth-child(3n + 2) .monument-property-image { aspect-ratio: 1.05; }
+  .monument-property-meta h3 { font-size: 46px; }
+  .monument-number-grid > div { min-height: 150px; padding: 18px 12px; }
+  .monument-number-grid strong { font-size: 72px; }
+  .monument-number-grid span { font-size: 8px; line-height: 1.4; }
+  .monument-map { min-height: 500px; }
+  .monument-location-copy { min-height: 650px; padding: 70px 18px; }
+  .monument-location-copy h2 { font-size: 54px; }
+  .monument-inquiry-copy h2 { font-size: 70px; }
+  .monument-form label { grid-template-columns: 1fr; gap: 12px; }
+  .monument-form input, .monument-form select, .monument-form textarea { font-size: 23px; width: 100%; }
+  .monument-form button[type=submit] { align-self: stretch; justify-content: center; }
+  .monument-footer { grid-template-columns: 1fr; padding-left: 18px; padding-right: 18px; }
+  .monument-footer-wordmark { font-size: 36px; grid-column: auto; }
+  .monument-footer-links { align-items: flex-start; }
+  .monument-footer small { grid-column: auto; }
+  .monument-modal-backdrop { padding: 0; }
+  .monument-modal { height: 100vh; }
+  .monument-modal-image { min-height: 42vh; }
+  .monument-modal-content { padding: 45px 20px; }
+  .monument-modal-content h2 { font-size: 65px; }
+  .monument-modal-content blockquote { font-size: 19px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .monument-site *, .monument-site *::before, .monument-site *::after { scroll-behavior: auto!important; transition-duration: .01ms!important; animation-duration: .01ms!important; }
+}
